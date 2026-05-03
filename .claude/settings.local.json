@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:cyberroom.fortis.ru)",
+      "WebFetch(domain:locospadel.ru)",
+      "Bash(mkdir -p /Users/antonii/python_projects/цу/classes/2025/product/ux_ui/references)",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36\" -o cyberroom.html https://cyberroom.fortis.ru/)",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36\" -o locospadel.html https://locospadel.ru/)",
+      "Bash(gh auth *)",
+      "Bash(git --version)",
+      "Bash(brew install *)",
+      "Bash(curl -sS -o /tmp/landing.html -w \"HTTP %{http_code}, size %{size_download} bytes\\\\n\" http://localhost:5000/)",
+      "Read(//tmp/**)",
+      "Bash(curl -sS -o /tmp/landing.html -w \"HTTP %{http_code}, size %{size_download} bytes\\\\n\" http://localhost:5050/)",
+      "Read(//private/tmp/**)",
+      "Bash(curl -sS -X POST http://localhost:5050/api/lead -H \"Content-Type: application/json\" -d '{\"email\":\"test@example.com\",\"source\":\"smoke\"}')",
+      "Bash(curl -sS -X POST http://localhost:5050/api/lead -H \"Content-Type: application/json\" -d '{\"email\":\"not-an-email\"}')",
+      "Bash(xargs -r kill -9)",
+      "Bash(/opt/homebrew/bin/gh --version)",
+      "Bash(/opt/homebrew/bin/gh auth *)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}

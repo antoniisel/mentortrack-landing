@@ -1,0 +1,159 @@
+<section id="pricing" class="py-20 md:py-28 border-t border-subtle/60" x-data="{ annual: false }">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-2xl">
+      <div class="text-sm font-medium text-accent mb-3">Тарифы</div>
+      <h2 class="text-3xl md:text-5xl font-bold tracking-tight">
+        Один новый ученик окупает Pro за неделю
+      </h2>
+      <p class="mt-4 text-secondary">
+        Подписка ежемесячная, без скрытых платежей. Тариф можно сменить или
+        отменить в один клик в любой момент.
+      </p>
+    </div>
+
+    <div class="mt-10 inline-flex items-center gap-3 p-1 rounded-xl bg-elevated border border-subtle">
+      <button
+        @click="annual = false"
+        :class="!annual ? 'bg-overlay text-primary' : 'text-secondary'"
+        class="px-4 py-2 rounded-lg text-sm font-medium transition">
+        Месяц
+      </button>
+      <button
+        @click="annual = true"
+        :class="annual ? 'bg-overlay text-primary' : 'text-secondary'"
+        class="px-4 py-2 rounded-lg text-sm font-medium transition flex items-center gap-2">
+        Год
+        <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-success/20 text-success">−20%</span>
+      </button>
+    </div>
+
+    <div class="mt-10 grid md:grid-cols-3 gap-5">
+      <!-- STARTER -->
+      <div class="rounded-2xl bg-elevated border border-subtle p-6 flex flex-col">
+        <div class="text-xs font-mono text-tertiary mb-2">STARTER</div>
+        <h3 class="text-xl font-semibold mb-1">Начинающему ментору</h3>
+        <p class="text-sm text-secondary mb-6">До 5 учеников · базовые функции</p>
+
+        <div class="mb-6">
+          <div x-show="!annual">
+            <span class="text-4xl font-bold">1 490 ₽</span>
+            <span class="text-secondary">/мес</span>
+          </div>
+          <div x-show="annual" x-cloak>
+            <div class="flex items-baseline gap-2">
+              <span class="text-4xl font-bold">1 192 ₽</span>
+              <span class="text-secondary">/мес</span>
+            </div>
+            <div class="text-xs text-tertiary mt-1"><s>1 490 ₽</s> при оплате за год = 14 304 ₽</div>
+          </div>
+        </div>
+
+        <ul class="space-y-2.5 text-sm mb-8 flex-1">
+          <li class="flex gap-2"><span class="text-success">✓</span> До 5 учеников</li>
+          <li class="flex gap-2"><span class="text-success">✓</span> Профили, цели, история встреч</li>
+          <li class="flex gap-2"><span class="text-success">✓</span> Импорт из Notion / Google Sheets</li>
+          <li class="flex gap-2"><span class="text-success">✓</span> Напоминания и календарь</li>
+          <li class="flex gap-2 text-tertiary"><span>—</span> AI-функции</li>
+          <li class="flex gap-2 text-tertiary"><span>—</span> Дропаут-алерты</li>
+        </ul>
+
+        <a href="#final-cta" class="text-center px-4 py-3 rounded-xl border border-subtle hover:border-tertiary transition font-medium">
+          Попробовать бесплатно
+        </a>
+        <div class="text-xs text-tertiary text-center mt-3">14 дней Pro в подарок · без карты</div>
+      </div>
+
+      <!-- PRO -->
+      <div class="rounded-2xl bg-elevated border-2 border-accent p-6 flex flex-col relative shadow-glow">
+        <span class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-accent text-xs font-semibold whitespace-nowrap">
+          ⭐ Популярный · 9 из 10 выбирают
+        </span>
+        <div class="text-xs font-mono text-accent mb-2">PRO</div>
+        <h3 class="text-xl font-semibold mb-1">Активному ментору</h3>
+        <p class="text-sm text-secondary mb-6">До 15 учеников · всё с AI</p>
+
+        <div class="mb-6">
+          <div x-show="!annual">
+            <span class="text-4xl font-bold">2 990 ₽</span>
+            <span class="text-secondary">/мес</span>
+          </div>
+          <div x-show="annual" x-cloak>
+            <div class="flex items-baseline gap-2">
+              <span class="text-4xl font-bold">2 392 ₽</span>
+              <span class="text-secondary">/мес</span>
+            </div>
+            <div class="text-xs text-tertiary mt-1"><s>2 990 ₽</s> при оплате за год = 28 704 ₽</div>
+          </div>
+        </div>
+
+        <ul class="space-y-2.5 text-sm mb-8 flex-1">
+          <li class="flex gap-2"><span class="text-success">✓</span> До 15 учеников</li>
+          <li class="flex gap-2"><span class="text-success">✓</span> Всё из Starter</li>
+          <li class="flex gap-2"><span class="text-success">✓</span> <strong>AI-черновик фидбека</strong></li>
+          <li class="flex gap-2"><span class="text-success">✓</span> AI-генерация плана обучения</li>
+          <li class="flex gap-2"><span class="text-success">✓</span> Pre-meeting summary</li>
+          <li class="flex gap-2"><span class="text-success">✓</span> Дропаут-алерты</li>
+        </ul>
+
+        <a href="#final-cta" class="text-center px-4 py-3 rounded-xl bg-accent hover:bg-accent/90 transition font-semibold">
+          Попробовать бесплатно
+        </a>
+        <div class="text-xs text-tertiary text-center mt-3">14 дней · без карты · окупается за 1 ученика</div>
+      </div>
+
+      <!-- TEAM -->
+      <div class="rounded-2xl bg-elevated border border-subtle p-6 flex flex-col">
+        <div class="text-xs font-mono text-tertiary mb-2">TEAM</div>
+        <h3 class="text-xl font-semibold mb-1">Школе менторов</h3>
+        <p class="text-sm text-secondary mb-6">5+ менторов · аналитика</p>
+
+        <div class="mb-6">
+          <div x-show="!annual">
+            <span class="text-4xl font-bold">7 990 ₽</span>
+            <span class="text-secondary">/мес</span>
+          </div>
+          <div x-show="annual" x-cloak>
+            <div class="flex items-baseline gap-2">
+              <span class="text-4xl font-bold">6 392 ₽</span>
+              <span class="text-secondary">/мес</span>
+            </div>
+            <div class="text-xs text-tertiary mt-1"><s>7 990 ₽</s> при оплате за год = 76 704 ₽</div>
+          </div>
+        </div>
+
+        <ul class="space-y-2.5 text-sm mb-8 flex-1">
+          <li class="flex gap-2"><span class="text-success">✓</span> Команда от 5 менторов</li>
+          <li class="flex gap-2"><span class="text-success">✓</span> Всё из Pro</li>
+          <li class="flex gap-2"><span class="text-success">✓</span> Аналитика по школе</li>
+          <li class="flex gap-2"><span class="text-success">✓</span> Роли и права доступа</li>
+          <li class="flex gap-2"><span class="text-success">✓</span> SSO / SAML</li>
+          <li class="flex gap-2"><span class="text-success">✓</span> Self-host (опция)</li>
+        </ul>
+
+        <a href="#final-cta" class="text-center px-4 py-3 rounded-xl border border-subtle hover:border-tertiary transition font-medium">
+          Связаться с нами
+        </a>
+        <div class="text-xs text-tertiary text-center mt-3">Демо для команды · onboarding бесплатно</div>
+      </div>
+    </div>
+
+    <div class="mt-10 grid md:grid-cols-3 gap-4 text-sm">
+      <div class="flex items-center gap-3 p-4 rounded-xl bg-elevated border border-subtle">
+        <span class="text-success text-lg">✓</span>
+        <span class="text-secondary">Без скрытых платежей. NDS включён.</span>
+      </div>
+      <div class="flex items-center gap-3 p-4 rounded-xl bg-elevated border border-subtle">
+        <span class="text-success text-lg">✓</span>
+        <span class="text-secondary">Возврат за неиспользованные дни.</span>
+      </div>
+      <div class="flex items-center gap-3 p-4 rounded-xl bg-elevated border border-subtle">
+        <span class="text-success text-lg">✓</span>
+        <span class="text-secondary">Смена тарифа в один клик.</span>
+      </div>
+    </div>
+
+    <div class="mt-8 p-6 rounded-2xl bg-overlay border border-subtle text-center">
+      <span class="text-secondary">Один новый ученик стоит 15 000 ₽/мес. Pro окупается за неделю → дальше — чистая прибыль.</span>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+[x-cloak] { display: none !important; }
+
+html { scroll-behavior: smooth; }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #0A0A0B; }
+::-webkit-scrollbar-thumb { background: #26262B; border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: #3a3a40; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+.animate-float { animation: float 3s ease-in-out infinite; }

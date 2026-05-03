@@ -1,0 +1,36 @@
+<section id="final-cta" class="py-20 md:py-28 border-t border-subtle/60">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-5xl font-bold tracking-tight">
+      Один новый ученик окупает MentorTrack за&nbsp;месяц
+    </h2>
+    <p class="mt-5 text-secondary text-lg">
+      14 дней бесплатно. Без карты. Импорт из Notion за 5 минут.
+    </p>
+
+    <form
+      x-data="leadForm()"
+      @submit.prevent="submit"
+      class="mt-10 flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+      <input
+        type="email"
+        name="email"
+        x-model="email"
+        required
+        placeholder="ваш@email.ru"
+        class="flex-1 px-5 py-3.5 rounded-xl bg-elevated border border-subtle focus:outline-none focus:border-accent placeholder:text-tertiary"
+      />
+      <button
+        type="submit"
+        :disabled="loading"
+        class="px-6 py-3.5 rounded-xl bg-accent hover:bg-accent/90 disabled:opacity-50 transition font-semibold shadow-glow whitespace-nowrap">
+        <span x-show="!loading">Получить ранний доступ</span>
+        <span x-show="loading" x-cloak>Отправляем…</span>
+      </button>
+    </form>
+
+    <p class="mt-6 text-xs text-tertiary">
+      Нажимая кнопку, ты соглашаешься с обработкой персональных данных.
+      Спама нет — пишем только по делу.
+    </p>
+  </div>
+</section>
