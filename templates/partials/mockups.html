@@ -1,238 +1,186 @@
 <section id="mockups" class="py-20 md:py-28 border-t border-subtle/60">
   <div class="max-w-6xl mx-auto px-6">
-    <div class="max-w-2xl">
-      <div class="text-sm font-medium text-accent mb-3">Макеты продукта</div>
+    <div class="max-w-3xl">
+      <div class="text-sm font-medium text-accent mb-3">Продукт в работе</div>
       <h2 class="text-3xl md:text-5xl font-bold tracking-tight">
-        Один сценарий — три экрана
+        Один продукт — в Telegram и Web UI
       </h2>
-      <p class="mt-4 text-secondary">
-        Утро понедельника. У тебя 8 учеников и 5 часов времени. Смотри, как
-        MentorTrack ведёт через основной сценарий ментора.
+      <p class="mt-4 text-secondary text-lg">
+        Создавай планы, выдавай задания и проверяй работы там, где удобно.
+        В Web UI доступен тот же функционал и общая аналитика по ученикам.
       </p>
     </div>
 
-    <div class="mt-14 space-y-16">
-
-      <!-- ЭКРАН 1: ДАШБОРД -->
-      <div class="grid md:grid-cols-[1fr_2fr] gap-8 items-start">
-        <div class="md:sticky md:top-24">
-          <div class="text-xs font-mono text-accent mb-2">ШАГ 1 · 09:15</div>
-          <h3 class="text-2xl font-semibold mb-3">Дашборд: что важно сегодня</h3>
-          <p class="text-secondary text-sm leading-relaxed mb-4">
-            Открываешь приложение — за 5 секунд видишь: кто в риске, у кого
-            ждёт фидбек, кому пора писать. Без 5 вкладок и 10 мессенджеров.
-          </p>
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-overlay border border-subtle text-xs">
-            <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
-            Решает: хаос инструментов + пропавшие ученики
-          </div>
+    <div class="mt-14 rounded-2xl bg-elevated border border-subtle p-5 md:p-7 shadow-card">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+        <div>
+          <div class="text-xs font-mono text-accent mb-2">TELEGRAM</div>
+          <h3 class="text-2xl font-semibold">Можно работать с телефона</h3>
+          <p class="mt-2 text-sm text-secondary">От создания учебного блока до проверки готовой работы.</p>
         </div>
-
-        <div class="rounded-2xl bg-elevated border border-subtle shadow-card overflow-hidden">
-          <div class="flex items-center gap-2 px-4 py-3 border-b border-subtle">
-            <span class="w-3 h-3 rounded-full bg-danger/70"></span>
-            <span class="w-3 h-3 rounded-full bg-warning/70"></span>
-            <span class="w-3 h-3 rounded-full bg-success/70"></span>
-            <span class="ml-3 text-xs text-tertiary font-mono">app.mentortrack.io/dashboard</span>
-          </div>
-          <div class="p-6">
-            <div class="flex items-center justify-between mb-6">
-              <div>
-                <div class="text-xs text-tertiary">Понедельник, 4 мая</div>
-                <h4 class="text-xl font-semibold mt-1">Доброе утро, Антоний</h4>
-              </div>
-              <div class="flex gap-3">
-                <div class="text-center">
-                  <div class="text-2xl font-bold">8</div>
-                  <div class="text-[10px] text-tertiary uppercase tracking-wider">учеников</div>
-                </div>
-                <div class="text-center">
-                  <div class="text-2xl font-bold text-warning">3</div>
-                  <div class="text-[10px] text-tertiary uppercase tracking-wider">требуют действий</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="space-y-2">
-              <div class="flex items-center justify-between p-3 rounded-xl bg-danger/10 border border-danger/30">
-                <div class="flex items-center gap-3">
-                  <div class="w-9 h-9 rounded-full bg-gradient-to-br from-pink-400 to-pink-600 flex items-center justify-center text-xs font-semibold">МС</div>
-                  <div>
-                    <div class="text-sm font-medium">Мария Соколова</div>
-                    <div class="text-xs text-tertiary">UX/UI · 2 пропуска ДЗ · активность −62%</div>
-                  </div>
-                </div>
-                <span class="text-xs px-2.5 py-1 rounded-full bg-danger/20 text-danger border border-danger/30 font-medium">⚠ риск ухода</span>
-              </div>
-
-              <div class="flex items-center justify-between p-3 rounded-xl bg-overlay border border-subtle">
-                <div class="flex items-center gap-3">
-                  <div class="w-9 h-9 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-xs font-semibold">АВ</div>
-                  <div>
-                    <div class="text-sm font-medium">Алексей Воронов</div>
-                    <div class="text-xs text-tertiary">Backend · ДЗ #14 ждёт фидбека · 2 дня</div>
-                  </div>
-                </div>
-                <span class="text-xs px-2.5 py-1 rounded-full bg-warning/20 text-warning border border-warning/30 font-medium">фидбек</span>
-              </div>
-
-              <div class="flex items-center justify-between p-3 rounded-xl bg-overlay border border-subtle">
-                <div class="flex items-center gap-3">
-                  <div class="w-9 h-9 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center text-xs font-semibold">ИЛ</div>
-                  <div>
-                    <div class="text-sm font-medium">Игорь Лебедев</div>
-                    <div class="text-xs text-tertiary">DevOps · встреча сегодня в 18:00</div>
-                  </div>
-                </div>
-                <span class="text-xs px-2.5 py-1 rounded-full bg-accent/20 text-accent border border-accent/30 font-medium">встреча</span>
-              </div>
-
-              <div class="flex items-center justify-between p-3 rounded-xl bg-overlay border border-subtle">
-                <div class="flex items-center gap-3">
-                  <div class="w-9 h-9 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-xs font-semibold">ДЗ</div>
-                  <div>
-                    <div class="text-sm font-medium">Дмитрий Захаров</div>
-                    <div class="text-xs text-tertiary">Data · в графике · спринт 9 из 12</div>
-                  </div>
-                </div>
-                <span class="text-xs px-2.5 py-1 rounded-full bg-success/20 text-success border border-success/30 font-medium">ок</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <span class="inline-flex w-fit items-center gap-2 px-3 py-2 rounded-full bg-overlay border border-subtle text-xs text-secondary">
+          <span class="w-2 h-2 rounded-full bg-success"></span>
+          Без переключения между сервисами
+        </span>
       </div>
 
-      <!-- ЭКРАН 2: AI-ФИДБЕК -->
-      <div class="grid md:grid-cols-[2fr_1fr] gap-8 items-start">
-        <div class="rounded-2xl bg-elevated border border-subtle shadow-card overflow-hidden md:order-1">
-          <div class="flex items-center gap-2 px-4 py-3 border-b border-subtle">
-            <span class="w-3 h-3 rounded-full bg-danger/70"></span>
-            <span class="w-3 h-3 rounded-full bg-warning/70"></span>
-            <span class="w-3 h-3 rounded-full bg-success/70"></span>
-            <span class="ml-3 text-xs text-tertiary font-mono">app.mentortrack.io/students/voronov/hw-14</span>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+        <article class="rounded-2xl bg-elevated border border-subtle overflow-hidden shadow-card">
+          <div class="p-4">
+            <div class="text-[10px] font-mono text-accent mb-1">01 · БЛОКИ</div>
+            <h4 class="text-sm font-semibold">Создать материалы</h4>
           </div>
-          <div class="p-6">
-            <div class="flex items-center justify-between mb-5">
-              <div>
-                <div class="text-xs text-tertiary">Алексей Воронов · ДЗ #14</div>
-                <h4 class="text-lg font-semibold mt-1">Concurrency: race-condition в balance updater</h4>
-              </div>
-              <span class="text-xs px-2 py-1 rounded-full bg-accent/20 text-accent border border-accent/30">⚡ AI-черновик</span>
-            </div>
-
-            <div class="space-y-3 text-sm">
-              <div class="rounded-lg border-l-2 border-success bg-success/5 p-3">
-                <div class="text-xs font-semibold text-success mb-1">ХОРОШО</div>
-                <div class="text-secondary">Чистая структура слоёв handler → service → repo. Тесты на nil/empty/large input. Используется `errgroup` для параллельных запросов.</div>
-              </div>
-              <div class="rounded-lg border-l-2 border-warning bg-warning/5 p-3">
-                <div class="text-xs font-semibold text-warning mb-1">СТОИТ ПОДУМАТЬ</div>
-                <div class="text-secondary">В <code class="font-mono text-xs bg-overlay px-1.5 py-0.5 rounded">UpdateBalance</code> возможна race condition при двух одновременных запросах. Не хватает блокировки на уровне строки БД.</div>
-              </div>
-              <div class="rounded-lg border-l-2 border-accent bg-accent/5 p-3">
-                <div class="text-xs font-semibold text-accent mb-1">ДАЛЬШЕ</div>
-                <div class="text-secondary">Прочитать главу 9 «Concurrency in Go» (Katherine Cox-Buday). Сделать ДЗ #15: транзакции с двойной блокировкой и benchmark.</div>
-              </div>
-            </div>
-
-            <div class="mt-5 pt-5 border-t border-subtle flex items-center justify-between">
-              <div class="text-xs text-tertiary">⚡ сгенерировано за 28 сек · ты редактируешь и отправляешь</div>
-              <div class="flex gap-2">
-                <button class="text-xs px-3 py-1.5 rounded-lg bg-overlay border border-subtle hover:border-tertiary transition">Редактировать</button>
-                <button class="text-xs px-3 py-1.5 rounded-lg bg-accent hover:bg-accent/90 transition">Отправить</button>
-              </div>
-            </div>
+          <div class="mx-2 mb-2 rounded-xl overflow-hidden border border-subtle bg-[#0e1723]">
+            <img
+              class="block w-full h-[220px] object-cover object-center"
+              src="{{ url_for('static', filename='img/product/block-library.png') }}"
+              alt="Создание учебного блока в Telegram"
+              loading="lazy"
+            />
           </div>
-        </div>
+        </article>
 
-        <div class="md:sticky md:top-24 md:order-2">
-          <div class="text-xs font-mono text-accent mb-2">ШАГ 2 · 09:24</div>
-          <h3 class="text-2xl font-semibold mb-3">AI-черновик: 60 минут → 5</h3>
-          <p class="text-secondary text-sm leading-relaxed mb-4">
-            Открываешь ДЗ Алексея — фидбек уже сгенерирован. Три блока:
-            «хорошо / стоит подумать / дальше». Правишь 2 строки, отправляешь.
-          </p>
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-overlay border border-subtle text-xs">
-            <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
-            Решает: ручной фидбек = потолок
+        <article class="rounded-2xl bg-elevated border border-subtle overflow-hidden shadow-card">
+          <div class="p-4">
+            <div class="text-[10px] font-mono text-accent mb-1">02 · ПЛАН</div>
+            <h4 class="text-sm font-semibold">Собрать план</h4>
           </div>
-        </div>
+          <div class="mx-2 mb-2 rounded-xl overflow-hidden border border-subtle bg-[#0e1723]">
+            <img
+              class="block w-full h-[220px] object-cover object-center"
+              src="{{ url_for('static', filename='img/product/plan-created.png') }}"
+              alt="Создание учебного плана в Telegram"
+              loading="lazy"
+            />
+          </div>
+        </article>
+
+        <article class="rounded-2xl bg-elevated border border-subtle overflow-hidden shadow-card">
+          <div class="p-4">
+            <div class="text-[10px] font-mono text-accent mb-1">03 · ЗАДАНИЕ</div>
+            <h4 class="text-sm font-semibold">Выдать следующий шаг</h4>
+          </div>
+          <div class="mx-2 mb-2 rounded-xl overflow-hidden border border-subtle bg-[#0e1723]">
+            <img class="block w-full h-[220px] object-cover object-left" src="{{ url_for('static', filename='img/product/first-task.png') }}" alt="Задание ученика в Telegram" loading="lazy" />
+          </div>
+        </article>
+
+        <article class="rounded-2xl bg-elevated border border-subtle overflow-hidden shadow-card">
+          <div class="p-4">
+            <div class="text-[10px] font-mono text-accent mb-1">04 · ПРОВЕРКА</div>
+            <h4 class="text-sm font-semibold">Принять работу</h4>
+          </div>
+          <div class="mx-2 mb-2 rounded-xl overflow-hidden border border-subtle bg-[#0e1723]">
+            <img class="block w-full h-[220px] object-cover object-left-top" src="{{ url_for('static', filename='img/product/review.png') }}" alt="Проверка домашней работы в Telegram" loading="lazy" />
+          </div>
+        </article>
       </div>
+    </div>
 
-      <!-- ЭКРАН 3: AI-ПЛАН -->
-      <div class="grid md:grid-cols-[1fr_2fr] gap-8 items-start">
-        <div class="md:sticky md:top-24">
-          <div class="text-xs font-mono text-accent mb-2">ШАГ 3 · 11:40</div>
-          <h3 class="text-2xl font-semibold mb-3">AI-план для нового ученика</h3>
-          <p class="text-secondary text-sm leading-relaxed mb-4">
-            На связь вышла Катя — junior frontend, хочет вырасти до middle за 6
-            месяцев. Заполняешь анкету — MentorTrack за 20 секунд собирает
-            12-недельный план: темы, ДЗ, контрольные точки.
-          </p>
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-overlay border border-subtle text-xs">
-            <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
-            Решает: онбординг 2–4 часа на ученика
+    <div class="mt-8">
+      <article class="rounded-2xl bg-[#f6f5f8] border border-[#dedbe7] overflow-hidden shadow-card text-[#24212b]">
+        <div class="grid grid-cols-[150px_1fr] min-h-[590px]">
+          <aside class="hidden sm:flex flex-col bg-white text-[#777181] p-5 border-r border-[#e5e2eb]">
+            <div class="flex items-center gap-2 text-[#24212b] text-sm font-semibold mb-8">
+              <span class="w-9 h-9 grid place-items-center rounded-lg bg-accent text-white font-bold shadow-[0_0_24px_rgba(124,92,255,.35)]">M</span>
+              <span>MentorTrack<small class="block text-[8px] text-[#918b9a] font-normal">Mentor workspace</small></span>
+            </div>
+            <div class="space-y-1 text-[11px]">
+              <div class="px-3 py-2.5 rounded-lg bg-accent/10 text-accent border border-accent/15">Обзор</div>
+              <div class="px-3 py-2.5 rounded-lg">Менти</div>
+              <div class="px-3 py-2.5 rounded-lg flex justify-between">Проверки <span class="px-1.5 rounded-full bg-accent text-white">3</span></div>
+              <div class="px-3 py-2.5 rounded-lg">Планы</div>
+              <div class="px-3 py-2.5 rounded-lg">Аналитика</div>
+            </div>
+            <div class="mt-auto pt-4 border-t border-[#e5e2eb] text-[9px]">
+              <span class="inline-block w-1.5 h-1.5 rounded-full bg-[#51c58a] mr-1"></span> Бот работает
+            </div>
+          </aside>
+
+          <div class="min-w-0">
+            <header class="h-16 px-6 bg-white border-b border-[#e5e2eb] flex items-center justify-between">
+              <div class="text-[9px] text-[#817b88]">Рабочее пространство<br><strong class="text-[#24212b]">MentorTrack Demo</strong></div>
+              <span class="flex items-center gap-2 text-[9px]"><i class="w-8 h-8 grid place-items-center rounded-full bg-accent/20 text-accent not-italic font-bold border border-accent/25">А</i><b>Наставник</b></span>
+            </header>
+
+            <div class="p-6 bg-[radial-gradient(circle_at_80%_0%,rgba(124,92,255,.07),transparent_38%)]">
+              <div class="flex items-end justify-between gap-3">
+                <div>
+                  <div class="text-[9px] font-semibold text-accent">СВОДКА НА СЕГОДНЯ</div>
+                  <h3 class="text-2xl font-bold mt-1">Добрый день</h3>
+                  <p class="text-[10px] text-[#777181] mt-1">Следите за прогрессом менти и держите проверки под контролем.</p>
+                </div>
+                <button class="px-3 py-2 rounded-lg bg-accent text-white text-[9px] font-semibold shadow-[0_8px_24px_-10px_rgba(124,92,255,.8)]">+ Новый план</button>
+              </div>
+
+              <div class="grid grid-cols-2 lg:grid-cols-4 gap-2 mt-5">
+                <div class="p-3 rounded-xl bg-white border border-[#e5e2eb]">
+                  <div class="text-[8px] text-[#777181]">Активные менти</div><strong class="block text-xl mt-1">8</strong><small class="text-[7px] text-[#918b9a]">7 занимаются по плану</small>
+                </div>
+                <div class="p-3 rounded-xl bg-[#faf8ff] border border-accent/20">
+                  <div class="text-[8px] text-[#777181]">Ждут проверки</div><strong class="block text-xl mt-1 text-accent">3</strong><small class="text-[7px] text-[#918b9a]">1 работа больше суток</small>
+                </div>
+                <div class="p-3 rounded-xl bg-danger/10 border border-danger/25">
+                  <div class="text-[8px] text-danger">Риск ухода</div><strong class="block text-xl mt-1 text-danger">2</strong><small class="text-[7px] text-[#918b9a]">Требуют внимания</small>
+                </div>
+                <div class="p-3 rounded-xl bg-white border border-[#e5e2eb]">
+                  <div class="text-[8px] text-[#777181]">Сдано вовремя</div><strong class="block text-xl mt-1 text-success">84%</strong><small class="text-[7px] text-[#918b9a]">По активным планам</small>
+                </div>
+              </div>
+
+              <div class="grid lg:grid-cols-2 gap-3 mt-3">
+                <section class="p-4 rounded-xl bg-white border border-[#e5e2eb]">
+                  <div class="flex items-center justify-between text-[10px] mb-3">
+                    <strong>AI проверит ДЗ</strong>
+                    <span class="px-2 py-1 rounded-md bg-accent/15 text-accent border border-accent/20 text-[8px]">Черновик готов</span>
+                  </div>
+                  <div class="flex items-center gap-2 pb-3 border-b border-[#eeeaf2]">
+                    <span class="w-7 h-7 grid place-items-center rounded-full bg-accent/15 text-accent text-[9px] font-bold">А</span>
+                    <div><strong class="block text-[10px]">Алексей · REST API</strong><small class="text-[8px] text-[#918b9a]">Отправлено 12 минут назад</small></div>
+                  </div>
+                  <div class="mt-3 pl-2 border-l-2 border-[#18865d] text-[9px]">
+                    <strong>Сильная сторона</strong>
+                    <p class="mt-1 text-[#777181] leading-relaxed">Хорошо разделены handler и service, есть тесты.</p>
+                  </div>
+                  <div class="mt-3 pl-2 border-l-2 border-[#b86d16] text-[9px]">
+                    <strong>Доработать</strong>
+                    <p class="mt-1 text-[#777181] leading-relaxed">Добавить защиту конкурентного обновления.</p>
+                  </div>
+                  <button class="w-full mt-4 py-2 rounded-lg bg-accent text-white text-[9px] font-semibold">Открыть черновик</button>
+                </section>
+
+                <section class="p-4 rounded-xl bg-white border border-[#e5e2eb]">
+                  <div class="flex items-center justify-between text-[10px] mb-3">
+                    <strong>Риск ухода</strong>
+                    <span class="text-[8px] text-accent">Все ученики</span>
+                  </div>
+                  <div class="p-3 rounded-lg bg-danger/10 border border-danger/25">
+                    <div class="flex justify-between gap-2">
+                      <div><span class="text-[8px] font-semibold text-danger">ВЫСОКИЙ РИСК</span><strong class="block text-[10px] mt-1">Мария Соколова</strong></div>
+                      <strong class="text-danger text-sm">78%</strong>
+                    </div>
+                    <p class="mt-2 text-[9px] text-[#777181] leading-relaxed">Не отвечает 6 дней · 2 пропущенных дедлайна · активность −64%</p>
+                    <button class="mt-3 px-3 py-2 rounded-lg bg-accent text-white text-[9px] font-semibold">Написать в Telegram</button>
+                  </div>
+                  <div class="mt-2 p-3 rounded-lg bg-warning/10 border border-warning/25 flex justify-between">
+                    <div><span class="text-[8px] text-warning">НУЖНО ВНИМАНИЕ</span><strong class="block text-[10px] mt-1">Игорь Лебедев</strong></div>
+                    <strong class="text-warning">46%</strong>
+                  </div>
+                </section>
+              </div>
+
+              <div class="mt-3 p-4 rounded-xl bg-white border border-[#e5e2eb]">
+                <div class="flex items-center justify-between text-[10px] mb-3"><strong>Прогресс менти</strong><span class="text-[8px] text-accent">Все менти</span></div>
+                <div class="grid md:grid-cols-3 gap-3">
+                  <div class="flex items-center gap-2"><i class="w-7 h-7 grid place-items-center rounded-full bg-accent/10 text-accent text-[9px] not-italic">А</i><span class="flex-1"><b class="block text-[9px]">Алексей</b><em class="block h-1 mt-1 bg-[#ebe8ef] rounded"><u class="block w-[72%] h-full bg-accent rounded"></u></em></span><b class="text-[9px]">72%</b></div>
+                  <div class="flex items-center gap-2"><i class="w-7 h-7 grid place-items-center rounded-full bg-accent/10 text-accent text-[9px] not-italic">М</i><span class="flex-1"><b class="block text-[9px]">Мария</b><em class="block h-1 mt-1 bg-[#ebe8ef] rounded"><u class="block w-[38%] h-full bg-accent rounded"></u></em></span><b class="text-[9px]">38%</b></div>
+                  <div class="flex items-center gap-2"><i class="w-7 h-7 grid place-items-center rounded-full bg-accent/10 text-accent text-[9px] not-italic">И</i><span class="flex-1"><b class="block text-[9px]">Игорь</b><em class="block h-1 mt-1 bg-[#ebe8ef] rounded"><u class="block w-[61%] h-full bg-accent rounded"></u></em></span><b class="text-[9px]">61%</b></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="rounded-2xl bg-elevated border border-subtle shadow-card overflow-hidden">
-          <div class="flex items-center gap-2 px-4 py-3 border-b border-subtle">
-            <span class="w-3 h-3 rounded-full bg-danger/70"></span>
-            <span class="w-3 h-3 rounded-full bg-warning/70"></span>
-            <span class="w-3 h-3 rounded-full bg-success/70"></span>
-            <span class="ml-3 text-xs text-tertiary font-mono">app.mentortrack.io/students/new</span>
-          </div>
-          <div class="p-6">
-            <div class="flex items-center justify-between mb-5">
-              <div>
-                <div class="text-xs text-tertiary">Новый ученик · план обучения</div>
-                <h4 class="text-lg font-semibold mt-1">Екатерина Рябова · Frontend → Middle</h4>
-              </div>
-              <span class="text-xs px-2 py-1 rounded-full bg-accent/20 text-accent border border-accent/30">⚡ AI-план</span>
-            </div>
-
-            <div class="rounded-lg bg-overlay border border-subtle p-4 mb-4 text-xs space-y-1.5">
-              <div class="text-tertiary">Из анкеты:</div>
-              <div class="text-secondary">• Уровень: Junior, 1 год коммерческой разработки на React</div>
-              <div class="text-secondary">• Цель: Middle Frontend за 6 мес.</div>
-              <div class="text-secondary">• Слабые места: тестирование, performance, архитектура</div>
-            </div>
-
-            <div class="space-y-2">
-              <div class="flex items-center justify-between p-2.5 rounded-lg bg-overlay border border-subtle text-sm">
-                <span><span class="text-tertiary font-mono text-xs mr-2">W1–2</span> TypeScript глубоко: generics, utility types</span>
-                <span class="text-xs text-tertiary">2 ДЗ</span>
-              </div>
-              <div class="flex items-center justify-between p-2.5 rounded-lg bg-overlay border border-subtle text-sm">
-                <span><span class="text-tertiary font-mono text-xs mr-2">W3–4</span> React-тестирование: RTL + Vitest + MSW</span>
-                <span class="text-xs text-tertiary">3 ДЗ</span>
-              </div>
-              <div class="flex items-center justify-between p-2.5 rounded-lg bg-overlay border border-subtle text-sm">
-                <span><span class="text-tertiary font-mono text-xs mr-2">W5–6</span> Performance: профайлинг, мемоизация, виртуализация</span>
-                <span class="text-xs text-tertiary">2 ДЗ + проект</span>
-              </div>
-              <div class="flex items-center justify-between p-2.5 rounded-lg bg-overlay border border-subtle text-sm">
-                <span><span class="text-tertiary font-mono text-xs mr-2">W7–8</span> Архитектура: state-management, composition</span>
-                <span class="text-xs text-tertiary">2 ДЗ</span>
-              </div>
-              <div class="flex items-center justify-between p-2.5 rounded-lg bg-overlay border border-subtle text-sm">
-                <span><span class="text-tertiary font-mono text-xs mr-2">W9–10</span> Подготовка к Middle-собесу: live-coding, system design</span>
-                <span class="text-xs text-tertiary">mock-собесы</span>
-              </div>
-              <div class="flex items-center justify-between p-2.5 rounded-lg bg-overlay border border-subtle text-sm">
-                <span><span class="text-tertiary font-mono text-xs mr-2">W11–12</span> Финальный pet-project + код-ревью портфолио</span>
-                <span class="text-xs text-tertiary">проект</span>
-              </div>
-            </div>
-
-            <div class="mt-5 pt-5 border-t border-subtle flex items-center justify-between">
-              <div class="text-xs text-tertiary">⚡ план собран за 19 сек · ты правишь, ученик подтверждает</div>
-              <button class="text-xs px-3 py-1.5 rounded-lg bg-accent hover:bg-accent/90 transition">Принять план</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      </article>
     </div>
   </div>
 </section>
